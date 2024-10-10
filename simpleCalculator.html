@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <h1 class="h1">Simple Calculator</h1>
+  </head>
+  <body>
+    <p class="a" id="result"></p>
+    <P>
+      <button class="btn1" onclick="
+      calculation+='1'; 
+      document.getElementById('result').innerHTML = calculation;">1</button>
+      <button class="btn2" onclick="
+      calculation+='2';
+      document.getElementById('result').innerHTML = calculation;">2</button>
+      <button  class="btn3" onclick="
+      calculation+='3';
+      document.getElementById('result').innerHTML = calculation;">3</button>
+      <button class="plus" onclick="
+      calculation+=' + ';
+      document.getElementById('result').innerHTML = calculation;">+</button>
+    </P>
+    <P>
+      <button class="btn4" onclick="
+      calculation+='4';
+      document.getElementById('result').innerHTML = calculation;">4</button>
+      <button class="btn5" onclick="
+      calculation+='5';
+      document.getElementById('result').innerHTML = calculation;">5</button>
+      <button class="btn6" onclick="
+      calculation+='6';
+      document.getElementById('result').innerHTML = calculation;">6</button>
+      <button class="minus" onclick="
+      calculation+=' - ';
+      document.getElementById('result').innerHTML = calculation;">-</button>
+    </P>
+    <P>
+      <button class="btn7" onclick="
+      calculation+='7';
+      document.getElementById('result').innerHTML = calculation;">7</button>
+      <button class="btn8" onclick="
+      calculation+='8';
+      document.getElementById('result').innerHTML = calculation;">8</button>
+      <button class="btn9" onclick="
+      calculation+='9';
+      document.getElementById('result').innerHTML = calculation;">9</button>
+      <button class="mul" onclick="
+      calculation+=' * ';
+      document.getElementById('result').innerHTML = calculation;">*</button>
+    </P>
+    <P>
+      <button class="btn0" onclick="
+      calculation+='0';
+      document.getElementById('result').innerHTML = calculation;">0</button>
+      <button class="dot"onclick="
+      calculation+='.';
+      document.getElementById('result').innerHTML = calculation;">.</button>
+      <button class="equalto" onclick="
+      calculation =eval(calculation);
+      document.getElementById('result').innerHTML = calculation;">=</button>
+      <button class="div" onclick="
+      calculation+=' / ';
+      document.getElementById('result').innerHTML = calculation;">/</button>
+    </P>
+    <button class="clear" onclick="
+    calculation='';
+    document.getElementById('result').innerHTML = calculation;">clear</button>
+    <button class="remove" onclick="
+    calculation = calculation.slice(0, -1); 
+    document.getElementById('result').innerHTML = calculation;"> <-- </button>
+    
+    <style>
+      h1{
+        color:white;
+      }
+      *{
+        background-color: black;
+      }
+      .btn1,.btn2,.btn3,.btn4,.btn5,.btn6,.btn7,.btn8,.btn9,.btn0,.dot,.equalto{
+        width:  60px; 
+        height: 60px; 
+        border-radius: 50%; 
+        background-color: rgb(52, 55, 52); 
+        color: white; 
+        border: none; 
+        text-align: center;
+        font-size: 30px;
+        margin: 3px;
+        
+      }
+      .plus,.minus,.mul,.div,.remove{
+        width:  60px; 
+        height: 60px; 
+        border-radius: 50%; 
+        background-color: rgb(237, 166, 14); 
+        color: white; 
+        border: none; 
+        text-align: center;
+        font-size: 30px;
+        margin: 3px;
+      }
+      .clear{
+        width:  60px; 
+        height: 60px; 
+        border-radius: 50%; 
+        background-color:  rgb(237, 166, 14);
+        color: white; 
+        border: none; 
+        text-align: center;
+        font-size: 20px;
+      }
+      .a,.h1{
+        color:aliceblue;
+        font-size:50px;
+ 
+      }
+    </style>
+      
+    <script>
+      let calculation="";
+    </script>
+  </body>
+</html>
